@@ -1,0 +1,2261 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Aman
+* Template Name : CPBIZ - Multipurpose Html5 Template
+* File          : CPBIZ main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Slider area css
+
+04. About area css
+
+05. Service area css
+
+06. Portfolio/work area css
+
+07. Team Area Css
+
+08. Fun facts area css
+
+09. Pricing area css
+
+10. Testimonial area css
+
+11. News area css
+
+12. Video area css
+
+13. Clients area css
+
+14. Subsicribe area css
+
+15. Contact area css
+
+16. Google map area css
+
+17. footer area css
+
+-------------------------------------------------------------------------------------- */
+
+
+/* Google Fonts Montserrat and Poppins */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Lora:400,700');
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    color: #666;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.75;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    color: #222;
+    letter-spacing: 0.6px;
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.subtitle:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #3cbadf;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.subtitle.left {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.subtitle.left:before {
+    transform: translate(0%);
+    left: 0%;
+}
+
+h2.subtitle.left {
+    margin-bottom: 35px;
+}
+
+h4 {
+    margin-top: 15px;
+}
+
+p {
+}
+
+a {
+    color: #3cbadf;
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #3cbadf;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a.no-btn {
+    color: #000;
+    font-weight: 500;
+}
+
+a.no-btn:hover {
+    color: #3cbadf;
+    
+}
+
+i.fa {
+    border-radius: 200px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn, input[type='submit'] {
+    display: inline-block;
+    background: transparent;
+    padding: 10px 25px;
+    font-weight: 400;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    color: #fff;
+    background: #3cbadf;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn.btn-trnsp {
+    background: #fff;
+    color: #666;
+}
+
+.btn-big {
+    border: 2px solid #000;
+    font-size: 20px;
+
+}
+
+.btn.btn-trnsp:hover {
+    border-color: #3cbadf;
+    background: #3cbadf;
+    color: #fff;
+}
+
+.btn.btn-reverse {
+    background: #333;
+    color: #fff;
+}
+.btn.btn-reverse:hover {
+    background: #3cbadf;
+}
+
+.btn.btn-dark {
+    background: #666;
+    color: #fff;
+}
+.btn.btn-dark:hover {
+    color: #666;
+    background: #fff;
+}
+
+.section-big {
+    padding: 80px 0px;
+}
+
+.section-small {
+    padding: 50px 0px;
+}
+
+.section-title {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    margin-top: 0px;
+}
+
+.section-title.white h2,
+.section-title.white p {
+    color: #fff;
+}
+
+.section-title p {
+    margin-top: 25px;
+}
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    display: none !important;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+i.fa {
+    color: #3cbadf;
+}
+
+[class*=' imghvr-'] .figcaption, 
+[class^=imghvr-] .figcaption {
+    background-color: #3cbadf;
+}
+
+.color {
+    color: #3cbadf;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.top-bar {
+    height: 50px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+}
+
+.top-bar i.fa {
+    font-size: 1.2em;
+    margin-right: 5px;
+    color: #3cbadf;
+}
+
+.tmail, .tphone {
+    float: left;
+    margin-right: 30px;
+}
+
+.tsocial {
+    float: right;
+    text-align: right;
+}
+
+.top-bar a {
+    color: inherit;
+}
+
+.tsocial a:hover i.fa {
+    color: #fff;
+}
+
+.tsocial a i.fa {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+.menu-holder {
+    height: 95px;
+}
+
+.menu-area {
+    background: #fff;
+    height: 95px;
+    z-index: 99;    
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.menu-area.sticky-menu {
+    top: 0px;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+
+}
+
+.mainmenu {
+    padding-top: 10px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .mainmenu {
+    padding-top: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+    margin-top: 13px;
+}
+
+.sticky-menu .navbar {
+    margin-top: 8px;
+}
+
+.navbar-brand img {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .navbar-brand img {
+    width: 90%;
+    margin: 2% 0;
+    height: auto;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand:hover {
+    color: #3cbadf;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-nav li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+    background: none;
+}
+
+.mainmenu li.active a {
+    color: #3cbadf;
+}
+
+/* Mobile Nav css */
+.navbar-toggle .icon-bar {
+    background: #3cbadf;
+}
+
+/*Dropdown Css*/
+.navbar-nav > li.dropdown:hover > a, 
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+
+@media (min-width: 768px) {
+    li.dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+.navbar-nav .dropdown-menu li a {
+    padding: 10px;
+}
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------------
+*                               03. Slider area css
+* ----------------------------------------------------------------------------------- */
+
+#slider {
+    height: 100%;
+    max-height: 550px;
+}
+
+#slider .carousel,
+#slider .carousel .carousel-inner,
+#slider .carousel .carousel-inner .item {
+    height: 100%;
+    min-height: 400px;
+}
+
+#slider .main-container {
+  padding: 0;
+}
+
+#slider .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    background: transparent;
+    margin: 0px;
+    background: #fff;
+    margin-left: 5px;
+}
+
+#slider .carousel-indicators li.active {
+    border-color: #3cbadf;
+    background: #3cbadf;
+}
+
+#slider .carousel-control.right,
+#slider .carousel-control.left {
+    background-image: none;
+}
+
+#slider .carousel .item {
+    min-height: 425px;
+    height: 100%;
+    width:100%;
+}
+
+#slider .carousel .item:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#slider .carousel-control {
+    width: 6%;
+    text-shadow: none;
+}
+
+.right.carousel-control img,
+.left.carousel-control img {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -26px;
+    padding: 20px 10px;
+}
+
+.carousel-control img:hover  {
+    background: #3cbadf;
+}
+
+.left.carousel-control img {
+    left: 10px;
+}
+
+.right.carousel-control img {
+    right: 10px;
+}
+
+.carousel-control {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#slider .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slider .item:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+/* Slide Background Image */
+#slider .slide1 {
+    background-image: url(../img/slider/01.jpg);
+}
+
+#slider .slide2 {
+    background-image: url(../img/slider/02.jpg);
+}
+
+#slider .slide3 {
+    background-image: url(../img/slider/03.jpg);
+}
+
+.intro-text {
+    color: #fff;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro-text h2 {
+    color: inherit;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.intro-text p {
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+.intro-text .btn {
+    margin: 0 10px;
+}
+
+
+
+
+/* Slider text animation */
+
+.intro-text h2 {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transition: all 0.9s ease .1s;
+    -moz-transition: all 0.9s ease .1s;
+    -ms-transition: all 0.9s ease .1s;
+    -o-transition: all 0.9s ease .1s;
+    transition: all 0.9s ease .1s;
+    opacity: 0;
+}
+.item.active .intro-text h2 {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
+.intro-text .btn {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 0.9s ease .1s;
+    -moz-transition: all 0.9s ease .1s;
+    -ms-transition: all 0.9s ease .1s;
+    -o-transition: all 0.9s ease .1s;
+    transition: all 0.9s ease .1s;
+    opacity: 0;
+}
+.item.active .intro-text .btn {
+    -webkit-transform: translateY(-0px);
+    -moz-transform: translateY(-0px);
+    -ms-transform: translateY(-0px);
+    -o-transform: translateY(-0px);
+    transform: translateY(-0px);
+    opacity: 1;
+}
+.intro-text p {
+    transform: scale(0.5);
+    -webkit-transition: all 0.9s ease .1s;
+    -moz-transition: all 0.9s ease .1s;
+    -ms-transition: all 0.9s ease .1s;
+    -o-transition: all 0.9s ease .1s;
+    transition: all 0.9s ease .1s;
+    opacity: 0;
+}
+.item.active .intro-text p {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.intro-text .btn:hover {
+    -webkit-transition: all 0.3s ease .1s;
+    -moz-transition: all 0.3s ease .1s;
+    -ms-transition: all 0.3s ease .1s;
+    -o-transition: all 0.3s ease .1s;
+    transition: all 0.3s ease .1s;
+}
+
+
+/* ----------------------------------------------------------------------------
+*                               04. About area css
+* ----------------------------------------------------------------------------*/
+
+.about-area {
+    background: #fff;
+}
+
+.about-text h2 {
+    display: inline-block;
+}
+
+.about-text h4 {
+    margin-top: 0px;
+    line-height: inherit;
+}
+
+.about-text ul {
+    margin-top: 10px;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.about-text ul li {
+    line-height: 30px;
+    position: relative;
+    color: #444;
+    font-weight: 500;
+}
+
+.about-text ul li:before {
+    position: absolute;
+    content: "\f00c";
+    width: 12px;
+    height: 12px;
+    left: -30px;
+    top: 4px;
+    margin-top: -5px;
+    font-family: fontAwesome;
+    color: #3cbadf;
+}
+
+.about-text .btn {
+    margin-top: 15px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+/* about box */
+.about-box {
+    margin-top: 20px;
+}
+
+.about-box i.fa {
+    font-size: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.about-box {
+    float: left;
+
+}
+
+.about-box h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-box p {
+    overflow: hidden;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------
+*                                   08. Fun facts area css
+* ------------------------------------------------------------------------------- */
+.fun-fact-area {
+    margin-top: 80px;
+}
+
+.fun-fact {
+    position: relative;
+}
+
+.fun-fact.last {
+    border: none;
+}
+
+.fun-fact i.fa {
+    font-size: 25px;
+    background: #f5f5f5;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.fun-fact h3 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.fun-fact h3,
+.fun-fact p {
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------
+*                                   05. Service area css
+* ------------------------------------------------------------------------------- */
+
+.service-area {
+    background-color: #f5f5f5;
+}
+
+.service-box {
+    text-align: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.service-box:hover {
+    box-shadow: 0 5px 20px 0 #ccc;
+}
+
+/*.service-box i.fa {
+    font-size: 35px;
+    line-height: 60px;
+}*/
+
+.service-box i.fa {
+    font-size: 30px;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    background: #f5f5f5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.service-area .news-carousel .owl-buttons {
+    margin: 0px 5px;
+}
+
+.service-box .btn {
+    margin-top: 10px;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+
+
+/* Picture services area 
+-------------------------------------------------------  */
+.pic-service-area.section-big {
+    padding-bottom: 40px;
+}
+
+.pic-single-service {
+    margin-bottom: 40px;
+}
+
+.pic-single-service h3 {
+    background: #f5f5f5;
+    margin-top: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+/* -------------------------- */
+/*      Call To Action        */
+/* -------------------------- */
+.action-area {
+    background-color: #3cbadf;
+    color: #fff;
+}
+
+.action-area p {
+    font-size: 18px;
+}
+
+.action-area h2 {
+    margin-top: 0px;
+    color: inherit;
+    font-weight: 700;
+}
+
+.action-area .btn {
+    margin-top: 30px;
+}
+
+.action-area .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------
+*                               06. Working Process area css
+* --------------------------------------------------------------------------------- */
+.work-precess-area { }
+
+.nav-tabs a {
+    font-weight: 600;
+    color: #444;
+    background-color: #f5f5f5;
+}
+
+.tab-pane p {
+    margin-top: 15px;
+}
+
+.nav-tabs .active a {
+}
+
+
+.f-w-tab .nav {
+    width: 100%;
+    text-align: center;
+}
+.f-w-tab .nav li{
+    display: inline-block;
+    background-color: #3cbadf;
+    width: 20%;
+    margin: 0 3px;
+}
+.f-w-tab .nav li:hover, 
+.f-w-tab .nav li.active  {
+    background-color: #333;
+}
+.f-w-tab li a {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.f-w-tab li i.fa {
+    color: #fff;
+    display: block;
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.f-w-tab .panel-body {
+    margin-top: 50px;
+}
+.tab-content img {
+    width: 100%;
+}
+/* Full Width Tab */
+
+/* Round style tab */
+
+.f-w-tab .nav.round {}
+
+.f-w-tab .nav.round li {
+    background-color: #fff;
+    border: 2px solid #666;
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    margin: 0 3%;
+}
+
+@media (max-width: 768px) {
+    .f-w-tab .nav.round li {
+        margin: 0 1%;
+        margin-top: 20px;
+    }
+}
+
+.f-w-tab .nav.round li:hover, 
+.f-w-tab .nav.round li.active  {
+    background-color: #3cbadf;
+    border-color: #3cbadf;
+    color: #fff;
+}
+
+.f-w-tab .round li a,
+.f-w-tab .round li i.fa {
+    color: inherit;
+}
+
+
+
+/* accordion */
+.accordion .panel-group {
+    margin-bottom: 0;
+}
+
+.accordion .panel {
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.panel-group .panel+.panel {
+    margin: 0px;
+}
+
+.accordion .panel-heading {
+    padding: 0;
+    background: transparent;
+}
+
+.accordion .panel-heading a {
+    display: block;
+    padding: 0;
+    padding-left: 15px;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    color: inherit;
+    height: 40px;
+}
+
+.accordion .panel-heading a.collapsed i.fa:before {
+    content: "\f067";
+}
+
+.accordion .panel-heading i.fa {
+    width: 30px;
+    line-height: 40px;
+    float: left;
+}
+
+.accordion .panel-title {
+    float: left;
+    line-height: 40px;
+    font-size: 17px;
+    color: #333;
+}
+.accordion .panel-body {
+    padding: 15px 0;
+    margin-top: 0px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------
+*                               06. latest-project area css
+* ------------------------------------------------------------------------------- */
+.latest-project-area {}
+
+.project-item {
+    text-align: center;
+}
+
+.portfolio .project-item {
+    margin-top: 25px;
+}
+
+.project-item .figcaption {
+    display: flex;
+    align-items: center;
+}
+
+.project-item .figcaption .overlay {
+    text-align: center;
+    width: 100%;
+}
+
+.project-item h4 {
+    margin: 20px auto;
+}
+
+.project-item a i.fa {
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px;
+}
+
+[class*=' imghvr-'], [class^=imghvr-] {
+    background-color: #f5f5f5;
+}
+
+
+
+/* ---------------------------------------------------------------------------------
+*                               06. Portfolio/work area css
+* -------------------------------------------------------------------------------- */
+.works.section-big {
+}
+
+.portfolio .mix {
+    display: none;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filters li {
+    display: inline-block;
+    margin: 0px 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.filters li.active {
+    color: #3cbadf;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   09. Pricing area css
+* --------------------------------------------------------------------------------------- */
+.price-item {
+    padding: 0 15px 28px;
+    margin: 0;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+}
+
+.price-item ul {
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.price-item.featured {
+    background: #3cbadf;
+    color: #fff;
+}
+
+.price-item p.level {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 120px;
+    margin: 0;
+}
+
+.price-item p.desc {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.price-item p.price {
+    background: #fff;
+    margin: 0 -15px;
+    line-height: 72px;
+}
+
+.price-item.featured p.price {
+    color: #3cbadf;
+}
+
+.price-item p.price .dollar {
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+}
+
+.price-item p.price .number {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.price-item .features {
+    margin: 30px 0;
+}
+
+.price-item .features li {
+    padding: 5px 0;
+}
+
+.price-item a.btn {
+    background: #333;
+}
+
+.price-item a.btn:hover {
+    background: #3cbadf;
+    color: #fff;
+}
+
+.price-item.featured a.btn {
+    background: #fff;
+    color: #3cbadf;
+}
+
+.price-item.featured a.btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                10. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+.testimonial-area {
+    background: #3cbadf;
+}
+
+.testimonial-area .subtitle {
+    color: #fff;
+}
+
+.testimonial-area .subtitle:before {
+    background: #fff;
+}
+
+.testimonial-list {}
+
+.single-testimonial {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.testi-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.single-testimonial .test-meta {
+    margin-bottom: 50px;
+}
+
+.single-testimonial .test-meta i.fa {
+    color: #3cbadf;
+    background: #ffffff;
+    width: 82px;
+    height: 82px;
+    z-index: 101;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 200px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 2px solid #3cbadf;
+}
+
+.single-testimonial img {
+    background: #f5f5f5;
+    width: 80px;
+    max-width: 80px;
+    z-index: 101;
+    border-radius: 200px;
+    margin: 0 auto;
+}
+
+.news-carousel .owl-item {
+    padding: 0 15px;
+}
+
+.owl-slider .owl-controls, 
+.news-carousel .owl-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;    
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.news-carousel:hover .owl-controls {
+    opacity: 1;
+}
+
+.owl-slider img {
+    width: 100%;
+}
+
+.owl-slider .owl-controls {
+    opacity: 1;
+}
+
+.owl-buttons {
+    opacity: 0.7;
+}
+
+.owl-buttons i.fa {
+    font-size: 25px;
+    color: #fff;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+.owl-buttons i.fa:hover {
+    /*color: #333;*/
+    background-color: #3cbadf;
+}
+
+.owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    border: 1px solid #fff;
+    background: #fff;
+    float: left;
+}
+
+.owl-pagination {
+    width: 80px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.owl-page.active span {
+    border-color: #3cbadf;
+    background: #3cbadf;
+}
+
+.owl-controls .owl-buttons div {
+    font-size: 25px;
+    background: none;
+}
+
+.owl-prev {
+    float: left;
+}
+
+.owl-next {
+    float: right;
+}
+
+.news-carousel .owl-buttons {
+    margin: 0 15px;
+}
+
+.owl-client .owl-controls {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.home-post-meta {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.home-post-meta .news-meta {
+    float: left;
+}
+
+.home-post-meta .no-btn {
+    float: right;
+}
+
+.news-content a:hover h3 {
+    color: #3cbadf;
+    transition: 0.3s ease;
+}
+
+.news-content {
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   11. Quote Form css
+* --------------------------------------------------------------------------------------- */
+.quote-form {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.quote-form .form-group {
+    float: left;
+    width: 46%;
+    margin: 2%;
+    margin-bottom: 0px;
+}
+
+.quote-form input {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+}
+
+.quote-form .form-group.full {
+    width: 96%;
+}
+
+.quote-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   11. News area css
+* --------------------------------------------------------------------------------------- */
+.news-area {}
+.single-news {}
+
+.news-image img {
+    width: 100%;
+}
+.news-content .subtitle {
+    text-transform: inherit;
+    line-height: 28px;
+}
+.news-content .subtitle i.fa {
+    color: #3cbadf;
+}
+.news-content .btn {
+    margin-top: 10px;
+}
+.news-meta {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.news-meta span {
+    float: left;
+    margin-right: 15px;
+}
+
+.news-meta span i.fa {
+    margin-right: 4px;
+}
+
+.news-meta span a:hover i.fa {
+    color: #333;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   13. Client area css
+* --------------------------------------------------------------------------------------- */
+
+.client-area {
+    background-color: #f5f5f5;
+}
+
+.owl-client .item img {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                14. Subscribe area css
+* --------------------------------------------------------------------------------------- */
+.subscribe-area {
+    background-color: #f5f5f5;
+}
+
+.newsletter-form {
+    margin: auto;
+    margin-top: 30px;
+}
+.newsletter-form input{
+    display: inline-block;
+    height: 50px;
+    width: 80%;
+    padding: 5px 10px;
+    background: #fff;
+    float: left;
+    border-radius: 5px 0 0 5px;
+}
+.newsletter-form .mc-submit {
+    height: 50px;
+    width: 20%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3cbadf;
+    border: none;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+.newsletter-form .mc-submit i.fa {
+    color: #fff;
+}
+.newsletter-form .mc-submit:hover i.fa{
+    color: #333;
+}
+.subscribe-area .error {
+    text-align: left;
+}
+
+.mailchimp-alerts {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.mailchimp-alerts div {
+}
+.mailchimp-submitting{
+}
+.mailchimp-success{
+    color: green;
+}
+.mailchimp-error{
+    color: red;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   15. Contact area css
+* --------------------------------------------------------------------------------------- */
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    border: 1px solid #bbb;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 45px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 0;
+    width: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #3cbadf;
+    font-size: 18px;
+}
+
+.contact-form #message {
+    padding-top: 10px;
+    height: 150px;
+}
+
+#submitButton {}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #ff0000;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.address-box {
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+.contact-area h3 {
+    margin-top: 0px;
+}
+.address-box i.fa {
+    font-size: 20px;
+    line-height: 30px;
+    float: left;
+    width: 40px;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.address-box p, .address-box p a {
+    color: inherit;
+    margin: 0;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info i.fa {
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-info i.fa:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    margin-left: -35px;
+    height: 2px;
+    left: 50%;
+    bottom: 0px;
+}
+
+.contact-info a {
+    color: inherit;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   16. Google Map area css
+* --------------------------------------------------------------------------------------- */
+.gmap-area {
+    padding-top: 0px;
+}
+#contactgoogleMap {
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   17. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #333;
+    padding: 50px 0px;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-area a {
+    color: #fff;
+}
+.footer-area img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-area h4 {
+    color: #fff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.footer-area p {}
+.footer-area i.fa {
+    font-size: 20px;
+    width: 30px;
+    overflow: hidden;
+    float: left;
+    height: 30px;
+    border-radius: 0px;
+}
+
+.footer-area ul {
+    margin-left: 20px;
+}
+
+.footer-area ul li {
+    margin-bottom: 5px;
+}
+
+.q-link li {
+    float: left;
+    width: 50%;
+}
+
+.footer-area a:hover {
+    color: #3cbadf;
+}
+
+.footer-area .social-links {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.social-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links li a i.fa {
+    color: #aaa;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.social-links li a:hover i {
+    color: #3cbadf;
+}
+
+.copyright-text {
+    padding: 30px 0px;
+    background: #222;
+    color: #fff;
+}
+
+.copyright-text p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*  About Page Css */
+
+
+/*  who we are area 
+---------------------------------------------------------------- */
+.page-title {
+    background-image: url(../img/bg/page-title-bg.jpg);
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.page-title:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.page-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.page-title h2,
+.page-title p, 
+.page-title a {
+    color: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*  who we are area 
+---------------------------------------------------------------- */
+
+.who-we-are-area {
+    /*background-color: #f5f5f5;*/
+}
+
+.who-we-are-area h2 {
+}
+
+.list-group {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.list-group li {
+    width: 47%;
+    margin-left: 3%;
+    float: left;
+    line-height: 35px;
+}
+
+.list-group li i.fa {
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.video-area iframe {
+    width: 100%;
+    height: 320px;
+    border: medium none;
+}
+
+
+
+/*  Team Area 
+---------------------------------------------------------------- */
+.team-area {}
+
+.team-member{
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 30px;    
+    border: 1px solid #ddd;
+}
+
+.member-image{}
+
+.member-image img{
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.member-info {
+    transition: 0.3s ease-out;
+}
+
+.team-member h3{
+    margin-bottom: 6px;
+}
+
+.member-social a{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.member-social i.fa {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #777;
+}
+
+.member-social i.fa:hover {
+    color: #3cbadf;
+}
+
+
+
+/* Blog Page 
+-------------------------------------------------*/
+
+.single-post {
+    margin-bottom: 50px;
+}    
+
+.blog-content .single-post h3 {
+    margin-top: 0px;
+}
+
+.featured-img {
+    position: relative;
+}
+
+.featured-img img {
+    width: 100%;
+}
+
+.featured-img .news-meta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    background-color: rgba(255,255,255, 0.8);
+    line-height: 50px;
+    width: 100%;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.single-post p {
+    margin-bottom: 20px;
+}
+
+.single-post .btn {
+    margin-top: 10px;
+}
+
+.comment-form {}
+.comment-form input, 
+.comment-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.comment-form input[type=submit] {
+    display: inline-block;
+    width: auto;
+    padding: 5px 30px;
+}
+
+
+/* Blog Page css 
+-----------------------------------------------*/
+.widget {
+    margin-bottom: 40px;
+}
+
+.widget ul {
+    margin-left: 20px;
+}
+
+.widget-recent-posts ul {
+    list-style: none;
+}
+.widget a {
+    color: inherit;
+}
+.widget a:hover {
+    color: #3cbadf;
+}
+
+/* Search widget css */
+.widget-search form {
+    position: relative;
+}
+
+.widget-search #s {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    padding: 10px 45px 10px 5px;
+    box-sizing: border-box;
+}
+
+.widget-search input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    background-color: #3cbadf;
+    background-image: url(../img/search2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.widget-search label {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    pointer-events:none;
+    left: 10px;
+    font-weight: 100;
+}
+
+.widget-search input:focus ~ label,
+.widget-search textarea:focus ~ label,
+.widget-search input:valid ~ label,
+.widget-search textarea:valid ~ label {
+    display: none;
+}
+
+
+/* Recent Posts Widget */
+.widget-recent-posts ul li {
+    margin-bottom: 20px;
+}
+
+.widget-recent-posts ul li:last-child {
+    margin-bottom: 0;
+}
+
+.widget-recent-posts ul li img {
+    float: left;
+    margin-right: 15px;
+    width: 80px;
+}
+
+
+.widget-recent-posts .post-details {
+    font-size: 12px;
+    color: #999;
+}
+
+.widget-recent-posts .post-details span {
+    margin-right: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .widget-recent-posts ul li img {
+        display: none;
+    }
+    
+}
+
+/* Pagination css */
+.pagination>li>a {
+    color: #3cbadf;
+    font-weight: 500;
+} 
+.pagination>li>a:focus, 
+.pagination>li>a:hover, 
+.pagination>li>span:focus, 
+.pagination>li>span:hover {
+    color: #3cbadf;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    background-color: #3cbadf;
+    border-color: #3cbadf;
+}
+.pagination-lg>li:first-child>a, 
+.pagination-lg>li:first-child>span,
+.pagination-lg>li:last-child>a, 
+.pagination-lg>li:last-child>span {
+    border-radius: 0px;
+}
+
+
+
+/*
+comments css
+--------------------------------*/
+/*------------------------------------------------------------------*/
+/* 12 Blog comments */
+/*------------------------------------------------------------------*/
+.comments-img {
+    width: 120px;
+    height: 120px; 
+}
+
+.post-short-text {
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.comments ul {
+    margin: 0;
+    padding: 0; 
+}
+.comments ul li .comment-box {
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding-bottom: 35px; 
+}
+.comments ul li .comment-box img {
+    float: left;
+    max-width: 125px;
+    width: auto; 
+}
+.comments ul li .comment-box .comment-content {
+    margin-left: 150px; 
+}
+.comments ul li .comment-box .comment-content h4 {
+    color: #777777;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+.comments ul li .comment-box .comment-content a {
+    color: #777777;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s; 
+}
+.comments ul li .comment-box .comment-content span {
+    color: #555555;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 5px;
+}
+.comments ul.depth .comment-box {
+    padding-left: 150px; 
+}
+.comments ul li {
+    list-style: outside none none; 
+}
+.comments ul li .comment-box .comment-content a:hover {
+    color: #1672D2; 
+}
+
+.blog-preview .post-content {
+    padding: 25px 25px 50px; 
+}
+
+@media (max-width: 767px) {
+    .comments ul.depth .comment-box {
+        padding-left: 50px; 
+    } 
+}
+
+.comments h2 {
+    margin-bottom: 50px; 
+}
+
+
+
+
+
+
+/* Home 2 style */
+
+.about-text.left {
+    margin-bottom: 30px;
+}
+
+.promo-section {
+    color: #fff;
+}
+
+.promo-box {
+    background-color: #3cbadf;
+    padding: 30px 50px;
+    margin-top: 30px;
+}
+
+.promo-box i.fa {
+    font-size: 30px;
+    width: 50px;
+    float: left;
+    color: #fff;
+}
+
+.promo-box h3 {
+    color: inherit;
+    margin-top: 5px;
+}
+
+.process-area {
+    background-image: url(../img/bg/work-bg.html);  
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.process-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.process-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1200px) {
+    .process-box {
+        padding: 0 30px;
+    }
+}
+
+.number {
+    border: 1px solid #85af4b;
+    color: #fff;
+    background: #85af4b;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.process-box:before {
+    position: absolute;
+    content: '';
+    top: 25px;
+    left: 90px;
+    width: 100px;
+    text-align: right;
+    line-height: 3px;
+    height: 3px;
+    color: #85af4b;
+    border-bottom: 3px dashed #85af4b;
+    transform: translate( 0, -50%);
+    -ms-transform: translate( 0, -50%);
+    -webkit-transform: translate( 0, -50%);
+}
+
+.process-box:after {
+    position: absolute;
+    content: '\f0a9';
+    font-family: fontAwesome;
+    font-size: 30px;
+    top: 25px;
+    left: 50%;
+    width: 170px;
+    text-align: right;
+    line-height: 3px;
+    height: 3px;
+    color: #85af4b;
+    transform: translate( -50%, -50%);
+    -ms-transform: translate( -50%, -50%);
+    -webkit-transform: translate( -50%, -50%);
+}
+
+.process-box.last:after {
+    content: '\f058';
+}
